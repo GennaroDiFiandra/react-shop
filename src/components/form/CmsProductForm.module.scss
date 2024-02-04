@@ -1,0 +1,35 @@
+.cms-products-form {
+  position: fixed;
+  z-index: 10;
+  right: var(--space-small);
+  bottom: var(--space-small);
+  padding: var(--padding-normal) var(--padding-small);
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-normal);
+  background-color: var(--color-info);
+  box-shadow: var(--shadow);
+
+  .cms-products-form-label {
+    display: block;
+  }
+
+  .cms-products-form-field {
+    @extend %input;
+
+    width: 100%;
+  }
+
+  .cms-products-form-ctas {
+    @extend %ctas;
+  }
+
+  .cms-products-form-cta {
+    @extend %cta;
+
+    border: none;
+  }
+}

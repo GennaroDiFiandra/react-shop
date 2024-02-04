@@ -1,0 +1,18 @@
+.cms-products {
+  .cms-products-ctas {
+    @extend %ctas;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+
+    .cms-products-cta {
+      @extend %cta;
+      align-items: flex-start;
+    }
+  }
+
+  .cms-products-table {
+    @extend %list-reset;
+    @extend %items-list;
+    margin-bottom: 1rem;;
+  }
+}

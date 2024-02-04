@@ -1,0 +1,47 @@
+li.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-small);
+  padding: var(--padding-normal);
+  box-shadow: var(--shadow);
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-small);
+  }
+
+  .card-ctas {
+    @extend %ctas;
+  }
+
+  .card-cta {
+    @extend %cta;
+  }
+}
+
+div.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--gap-normal);
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-normal);
+  }
+
+  .card-ctas {
+    @extend %ctas;
+    justify-content: flex-start
+  }
+
+  .card-cta {
+    @extend %cta;
+  }
+}

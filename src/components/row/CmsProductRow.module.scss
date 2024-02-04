@@ -1,0 +1,19 @@
+.cms-products-product {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr 1fr 1fr;
+  gap: var(--gap-small);
+  align-items: center;
+
+  .cms-products-product-image {
+    max-height: 100px;
+    width: auto;
+  }
+
+  .cms-products-product-ctas {
+    @extend %ctas;
+
+    .cms-products-product-cta {
+      @extend %cta
+    }
+  }
+}

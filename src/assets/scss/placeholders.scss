@@ -1,0 +1,59 @@
+/*
+  %ctas
+  %cta
+  %input
+  %items-grid
+  %items-list
+  %item-row
+  %item-actions
+  %list-reset
+*/
+
+%ctas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-small);
+}
+
+%cta {
+  // reset
+  border: none;
+  text-decoration: none;
+
+  padding: var(--padding-tiny) var(--padding-small);
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+%input {
+  border: none;
+  padding: var(--padding-small);
+}
+
+%items-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-normal);
+}
+
+%items-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-normal);
+}
+
+%list-reset {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}

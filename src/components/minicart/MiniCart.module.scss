@@ -1,0 +1,24 @@
+.mini-cart {
+  position: fixed;
+  z-index: 10;
+  right: var(--space-small);
+  bottom: var(--space-small);
+  padding: var(--padding-tiny) var(--padding-small);
+  width: 100%;
+  max-width: 320px;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow);
+
+  .mini-cart-ctas {
+    @extend %ctas;
+
+    .mini-cart-cta {
+      @extend %cta;
+    }
+  }
+
+  .mini-cart-products {
+    @extend %list-reset;
+    @extend %items-list;
+  }
+}

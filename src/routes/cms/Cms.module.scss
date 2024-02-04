@@ -1,0 +1,9 @@
+.cms {
+  .cms-ctas {
+    @extend %ctas;
+
+    .cms-cta {
+      @extend %cta;
+    }
+  }
+}

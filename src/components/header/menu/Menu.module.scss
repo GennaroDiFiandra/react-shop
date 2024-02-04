@@ -1,0 +1,8 @@
+.main-menu {
+  display: flex;
+  gap: var(--gap-normal);
+
+  & > .active {
+    font-weight: bold;
+  }
+}

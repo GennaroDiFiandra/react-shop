@@ -1,0 +1,9 @@
+.row {
+  display: grid;
+  grid-template-columns: 5fr 1fr 2fr 3fr;
+  gap: var(--gap-small);
+
+  .row-ctas {
+    @extend %ctas;
+  }
+}

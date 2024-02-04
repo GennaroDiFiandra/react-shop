@@ -1,0 +1,19 @@
+.notification {
+  background-color: #ff0000;
+  color: var(--color-white);
+  display: flex;
+  border-radius: var(--radius);
+  padding: var(--padding-small) var(--padding-normal);
+
+  &.info {
+    background-color: var(--color-info);
+  }
+
+  &.success {
+    background-color: var(--color-success);
+  }
+
+  &.failure {
+    background-color: var(--color-failure);
+  }
+}
